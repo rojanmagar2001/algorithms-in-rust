@@ -43,7 +43,7 @@ fn count_letters(s: &str) -> Result<HashMap<char, usize>, IsogramError> {
 pub fn is_isogram(s: &str) -> Result<bool, IsogramError> {
     let letter_counts = count_letters(s)?;
 
-    Ok(letter_counts.values().all(|n| *n == 1))
+    Ok(letter_counts.values().all(|&count| count == 1))
 }
 
 #[cfg(test)]
