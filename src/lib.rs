@@ -1,3 +1,5 @@
+#![allow(unused)]
+mod data_structures;
 mod string;
 
 pub fn add(left: u64, right: u64) -> u64 {
