@@ -1,3 +1,4 @@
+mod binary_search_tree;
 mod hashtable;
 mod heap;
 mod linked_list;
